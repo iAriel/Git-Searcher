@@ -1,0 +1,72 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    min-height: calc(100% - 80px);
+}
+
+.searchContaier{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.newSearch{
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    text-align: center;
+
+    padding-bottom: 1rem;
+
+}
+
+.newSearch > Button{
+    background-color: blue;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.descript{
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #D3D3D3;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 12rem;
+}
+
+.butt{
+    display: flex;
+    justify-content: flex-start;
+    bottom:   0;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+.pagination > li{
+    padding: 1rem;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
