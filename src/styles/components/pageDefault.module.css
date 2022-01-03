@@ -40,12 +40,13 @@
     align-items: center;
     justify-content: center;
 
-    background: rgb(44, 44, 44);
+    background: #f8b18b;
     
 
     font: 100 45px 'Montserrat', Arial ;
     text-align: center;
 
+    box-shadow: 10px 7px 30px 2px rgba(0,0,0,0.1);
     
 }
 
@@ -69,6 +70,14 @@
 
 .content > Form {
     width: 50rem;
+    color: white;
+}
+label {
+    color: #1e212b;
+}
+
+.content ::placeholder {
+    color: #1e212b;
 }
 
 Form > Button{

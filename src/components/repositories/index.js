@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import {React, useEffect, useState } from 'react';
 import { Button, Form, Card } from 'react-bootstrap'
-import Pagination from 'react-bootstrap/Pagination'
 
 import api from '../../services/api'
 
@@ -32,14 +31,14 @@ export default function ReposRender(props){
                 key={number} 
                 id={number} 
                 onClick={handleUpdate}
-                className={currentPage == number ? styles.active : null}
+                className={currentPage === number ? styles.active : null}
                 >
                 {number}
             </li>
         )
     })
     useEffect(() => {
-        api.get(`${props.reposUrl}/repos`)
+        api.get(`${props.reposUrl}/repos`)  
         .then((response) => {
             setRepos(response.data)
             console.log(response.data)

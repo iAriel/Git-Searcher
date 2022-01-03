@@ -22,10 +22,6 @@
 
 }
 
-.newSearch > Button{
-    background-color: blue;
-}
-
 .cards{
     display: flex;
     flex-direction: row;
@@ -39,7 +35,6 @@
 }
 
 .descript{
-    border: 1px solid black;
     border-radius: 6px;
     background-color: #D3D3D3;
     padding: 1rem;
